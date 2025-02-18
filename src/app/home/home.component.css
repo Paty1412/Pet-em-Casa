@@ -1,0 +1,99 @@
+/* Contêiner do menu */
+.header {
+  background-color: #f458c3; /* Cor de fundo do menu */
+  padding: 10px;
+  width: 100%;
+}
+
+/* Menu principal */
+.nav {
+  display: flex;
+  justify-content: space-between; /* Alinha o ícone e o menu */
+  align-items: center;
+}
+
+/* Menu de navegação */
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease; /* Animação da transição */
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.nav-list li:hover {
+  background-color: #3b8ecc;
+  border-radius: 4px;
+}
+
+.nav-list button {
+  padding: 5px 10px;
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav-list button:hover {
+  background-color: #e76f51;
+}
+
+/* Botão de menu hamburguer */
+.menu-icon {
+  display: none; /* Oculta o ícone por padrão */
+  font-size: 30px;
+  color: #f4a261; /* Cor do ícone do menu */
+  cursor: pointer;
+}
+
+/* Menu ativo no modo responsivo (telas pequenas) */
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Ajusta a posição do menu */
+  left: 0;
+  width: 100%;
+  background-color: #58a1f4; /* Cor de fundo do menu */
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  /* Exibe o ícone do menu hamburguer em telas menores */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Inicialmente oculta o menu em telas pequenas */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Quando o menu estiver ativo, exibe o menu hamburguer */
+  .nav-list.active {
+    display: flex;
+  }
+
+  /* Ajuste nos links do menu quando em layout de coluna */
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}

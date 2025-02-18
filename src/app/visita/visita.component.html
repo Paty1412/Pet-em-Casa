@@ -1,0 +1,54 @@
+<section id="formulario">
+    <div class="form-container">
+      <h1>Agende a visita e avaliação comportamental do seu pet</h1>
+      <form action="#" method="post">
+        
+        <!-- Campo para Nome do Pet -->
+        <div class="form-group">
+          <label for="nomePet">Nome do Pet:</label>
+          <input type="text" id="nomePet" name="nomePet" placeholder="Digite o nome do seu pet" required />
+        </div>
+  
+        <!-- Campo para Raça do Pet -->
+        <div class="form-group">
+          <label for="racaPet">Raça do Pet:</label>
+          <input type="text" id="racaPet" name="racaPet" placeholder="Digite a raça do seu pet" required />
+        </div>
+  
+        <!-- Campo para Porte do Pet -->
+        <div class="form-group">
+          <label for="portePet">Porte do Pet:</label>
+          <select id="portePet" name="portePet" required>
+            <option value="" disabled selected>Selecione o porte</option>
+            <option value="Pequeno">Pequeno</option>
+            <option value="Médio">Médio</option>
+            <option value="Grande">Grande</option>
+          </select>
+        </div>
+  
+        <!-- Campo para Idade do Pet -->
+        <div class="form-group">
+          <label for="idadePet">Idade do Pet (em anos):</label>
+          <input type="number" id="idadePet" name="idadePet" placeholder="Digite a idade do seu pet" required min="0" />
+        </div>
+  
+        <!-- Campo para Agendar Visita -->
+        <div class="form-group">
+          <label for="dataVisita">Data para agendamento da visita:</label>
+          <input type="date" id="dataVisita" name="dataVisita" required />
+        </div>
+  
+        <!-- Campo para Avaliação Comportamental -->
+        <div class="form-group">
+          <label for="avaliacao">Avaliação Comportamental:</label>
+          <textarea id="avaliacao" name="avaliacao" placeholder="Informe qualquer detalhe sobre o comportamento do pet" required></textarea>
+        </div>
+  
+        <!-- Botão de Envio -->
+        <div class="form-group">
+          <button type="submit">Agendar Visita</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  

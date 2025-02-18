@@ -1,0 +1,57 @@
+/* Estilo geral para o layout */
+main {
+  padding: 20px;
+}
+
+.a1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+.a1-1, .a1-img {
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Ajuste das imagens principais */
+.a1-img img, .a1-imgs img {
+  max-width: 60%;  /* Ajusta o tamanho da imagem para 70% da largura do contêiner */
+  height: auto;
+  margin: 10px 0;  /* Espaçamento entre as imagens */
+  border-radius: 8px; /* Deixa as bordas arredondadas */
+}
+
+/* Estilo para a div com várias imagens (Missão e Valores) */
+.a1-imgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px; /* Espaçamento entre as imagens */
+}
+
+/* Ajustando a responsividade para telas pequenas */
+@media screen and (max-width: 767px) {
+  .a1 {
+    flex-direction: column; /* Coloca as imagens e textos em coluna */
+  }
+
+  .a1-imgs {
+    flex-direction: column; /* Coloca as imagens uma abaixo da outra */
+    align-items: center;
+  }
+
+  .a1-img img {
+    max-width: 100%; /* As imagens vão ocupar 100% da largura disponível */
+    margin-bottom: 15px; /* Espaço entre as imagens em telas pequenas */
+  }
+
+  .a1-1 {
+    padding: 10px;
+  }
+}
