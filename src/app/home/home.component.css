@@ -1,99 +1,461 @@
-/* Contêiner do menu */
-.header {
-  background-color: #f458c3; /* Cor de fundo do menu */
-  padding: 10px;
-  width: 100%;
-}
-
-/* Menu principal */
-.nav {
+#container1 {
   display: flex;
-  justify-content: space-between; /* Alinha o ícone e o menu */
+  height: 120px;
+  flex: 0 0 auto;
   align-items: center;
+  justify-content: space-between;
+  margin-left:420px;
+  margin-right: 270px;
 }
 
-/* Menu de navegação */
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transition: transform 0.3s ease; /* Animação da transição */
+
+header > div > img {
+  width: 120px;
+  height: 68.01px;
+  background-color: plum;
+} 
+#menu-h {
+  color: rgb(29, 27, 27);
+  display: none;
+  width: 35px;
+  height: 28px;
 }
 
-.nav-list li {
-  margin: 0 15px;
-}
-
-.nav-list a {
-  color: white;
+nav  a {
   text-decoration: none;
+  color: rgb(249, 240, 240);
   font-size: 16px;
-  padding: 5px 10px;
+  margin: 20px;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 
-.nav-list li:hover {
-  background-color: #3b8ecc;
-  border-radius: 4px;
+#login {
+  background-color:plum;
+  padding: 8px 20px;
 }
 
-.nav-list button {
-  padding: 5px 10px;
-  background-color: #f4a261;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+#login:hover {
+  background-color: #19bce1;
 }
 
-.nav-list button:hover {
-  background-color: #e76f51;
-}
-
-/* Botão de menu hamburguer */
-.menu-icon {
-  display: none; /* Oculta o ícone por padrão */
-  font-size: 30px;
-  color: #f4a261; /* Cor do ícone do menu */
-  cursor: pointer;
-}
-
-/* Menu ativo no modo responsivo (telas pequenas) */
-.nav-list.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60px; /* Ajusta a posição do menu */
-  left: 0;
-  width: 100%;
-  background-color: #58a1f4; /* Cor de fundo do menu */
-  align-items: center;
-  padding: 10px 0;
-}
-
-/* Estilos para telas menores */
-@media (max-width: 768px) {
-  /* Exibe o ícone do menu hamburguer em telas menores */
-  .menu-icon {
-    display: block;
+@media screen and (max-width: 1450px) { 
+    
+  #menu-h {
+      display: flex;
+      position: relative;
+      right: 32px;
+      width: 38px;
+      height:38px;
   }
 
-  /* Inicialmente oculta o menu em telas pequenas */
-  .nav-list {
+
+  nav {
+      position: relative;
+      font-family: Arial, sans-serif;
+  }
+  
+  #menu-h {
+      cursor: pointer;
+  }
+  
+  
+  #menu-oculto #login {
+      margin-top: 20px;
+      font-weight: bold;
+  }
+  
+  #login {
+    position: relative;
+    top: 5px;
+    color: white;
+}
+
+#container1 {
+    align-items: center;
+}
+
+.menu {
     display: none;
-    flex-direction: column;
-    width: 100%;
+}
+
+header img {
+    position: relative;
+    left: -200px;
+}
+
+main a {
+    top: 510px;
+    font-size: 12px;
+}
+
+#menu-oculto {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 250px;
+ height: 100vh;
+ background-color: #52c7ee;
+ color: rgb(24, 22, 22);
+ transform: translateX(-100%);
+ transition: transform 0.3s ease-in-out;
+ z-index: 10;
+ 
+}    
+#menu-oculto.show {
+    transform: translateX(0);
+}
+
+.menu {
+    display: block;
+}
+
+
+#header.push {
+    margin-left: 250px;
+    transition: 0.3s ease-in-out;
+}
+
+#header {
+    transition: 0.3s ease-in-out;
+}}
+
+@media screen and (max-width: 975px) { 
+
+
+  iframe {
+      width: 90vw;
   }
 
-  /* Quando o menu estiver ativo, exibe o menu hamburguer */
-  .nav-list.active {
-    display: flex;
+  #itens {
+      display: none;
   }
 
-  /* Ajuste nos links do menu quando em layout de coluna */
-  .nav-list li {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+  #funcionamento {
+      width: 90vw;
+  }
+
+  #container2-1-2 {
+      width: 90vw;
+  }
+
+   header img {
+      position: relative;
+      left: -400px;
+  } 
+
+  #container1 {
+      margin-right: 0px;
+  }
+
+  #container2-1 {
+      flex-direction: column-reverse;
+      height: 640px;
+      margin-left: 50px;
+      margin-top: 50px;
+  }
+
+  #container2-1-2 {
+      width: 500px;
+  }
+
+  #container1 img {
+      margin: 0;
+      position: relative;
+      left: -60px;
+  }
+
+  #salao {
+      margin-top: 40px;
+      font-size: 44px;
+      width: 500px;
+  }
+
+  #beleza {
+      margin-top: 100px;
+      font-size: 30px;
+      width: 350px;
+  }
+
+  main a {
+      width: 200px;
+  }
+
+  #funcionamento {
+      margin-top: 0;
+      position: relative;
+      bottom: 10px;
+      left: 60px;
+      width: 500px;
+  }
+
+  #sas {
+      position: relative;
+      bottom: 10px;
+      width: 500px;
+      left: 60px;
+  }
+
+  #container3 {
+      height: 190px;
+  }
+
+  #entrada {
+      justify-content: space-evenly;
+  }
+
+  #container1 {
+      margin-left: 100px;
+  }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+
+  #p1 {
+      justify-content: center;
+      position: relative;
+      left: 0px;
+      margin: 0;
+  }
+
+  .p2 {
+      justify-content: center;
+  }
+
+  #p2 {
+      margin: 5px 20px;
+  }
+
+  article h1 {
+      font-size: 20px;
+  }
+  
+  article p {
+      font-size: 14px;
+      line-height: 1.8em;
+  }
+
+  #container4 img {
+      width: 350px;
+      height: 350px;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+
+  main a {
+      left: -40px;
+      top: 410px;
+      font-size: 12px;
+      padding: 17px 20px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  iframe {
+      height: 840px;
+  }
+  
+  #container1 img {
+      width: 55px;
+      height: 40px;
+      position: relative;
+      left: -30px;
+      bottom: 2px;
+  }
+
+  #container1 {
+      height: 50px;
+      align-items: center;
+      flex-direction: row-reverse;
+  }
+
+  header {
+      background-color: #e67bb7;
+  }
+
+  #menu-h {
+      height: 35px;
+      width: 28px;
+
+  }
+
+  .container3-1 {
+      margin-bottom: 0px;
+  }
+
+  #container2-1 {
+      margin-left: 0px;
+      top: -25px;
+  }
+
+  #login {
+      display: none;
+  }
+
+  #entrada {
+      height: 100%;
+  }
+
+  #menu-h {
+      position: relative;
+      right: 83px;
+      top: -0px;
+  }
+  #c3-t3 {
+      width: 300px;
+      text-align: center;
+      margin-right: 0;
+      font-size: 14px;
+      margin: auto;
+  }
+
+  #txte {
+      width: 300px;
+      position: relative;
+      left: 35px;
+  }
+
+  
+  #email {
+      position: relative;
+      left: 300px;
+      top: 15px;
+      display: none;
+  }
+
+  #c3-t2 {
+      width: 300px;
+      text-align: center;
+      display: none;
+  }
+
+  #a2 {
+      flex-direction: column-reverse;
+  }
+
+
+  #salao {
+      margin-top: 0px;
+      font-size: 30px;
+      margin-bottom: 5px;
+  }
+
+  #beleza {
+      font-size: 22px;
+      width: 300px;
+      margin-top: 80px;
+  }
+
+  main .bi {
+      width: 22px;
+
+  }
+
+  #funcionamento {
+      font-size: 22px;
+  }
+
+  #container3 {
+      height: 120px;
+  }
+
+  #sas {
+      width: 300px;
+      font-size: 16px;
+  }
+
+  #turmas p {
+      font-size: 20px;
+      text-align: left;
+      width: 87vw;
+      margin-left: 25px;
+  }
+
+  #res {
+      position: relative;
+      left: -5px;
+  }
+
+  #setinha {
+      position: relative;
+      left: -32px;
+  }
+
+  .titulo {
+      margin-top: 10px;
+      width: 81vw;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0px;
+  }
+
+  #salao {
+      width: 300px;
+      z-index: 1;
+
+  }
+
+  #container2-1-2 {
+      width: 300px;
+  }
+
+
+
+  .conteudo {
+      width: 81vw;
+  }
+
+  .conteudo {
+      font-size: 16px;
+  }
+
+  .creditos {
+      font-size: 14px;
+  }
+
+  .a1 {
+      background: #F5F9FC;
+      flex-flow: column-reverse;
+  }
+
+
+
+  .a1 img {
+      width: 80vw;
+
+      height: 300px;
+  }
+
+  .a1-1 {
+      width: 81vw;
+  }
+
+  .data {
+      height: 35px;
+  }
+
+  #funcionamento {
+      width: 300px;
+  }
+  
+  #entrada {
+      width: 100vw;
+  }
+
+  .container3-1 {
+      justify-content: center;
   }
 }
+
+  

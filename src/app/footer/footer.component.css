@@ -16,30 +16,6 @@ footer .social {
     justify-content: center;
 }
 
-/* Estilo para os parágrafos no footer */
-footer .social p {
-    margin: 10px 0;
-}
-
-/* Estilo para o link da localização e o Instagram */
-footer .social a {
-    color: white; /* Mantendo a cor do texto */
-    text-decoration: none;
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-/* Quando o link for clicado, aplicar um efeito de hover */
-footer .social a:hover {
-    color: #f4a261; /* Cor do hover */
-}
-
-/* Imagem de localização */
-footer .social .local {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -52,7 +28,7 @@ footer .social .local {
         align-items: center; /* Centralizar os itens */
     }
 
-    footer .social p,
+    footer .social iframe,
     footer .social a {
         font-size: 14px; /* Ajustando o tamanho da fonte */
     }
@@ -69,7 +45,7 @@ footer .social .local {
         padding: 10px 5px; /* Reduzindo o padding ainda mais em telas muito pequenas */
     }
 
-    footer .social p,
+    footer .social iframe,
     footer .social a {
         font-size: 12px; /* Ajuste para telas menores */
     }

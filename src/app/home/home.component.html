@@ -1,15 +1,21 @@
-<nav class="header">
-  <div class="nav">
-  <!-- Lista de itens do menu -->
-    <ul class="nav-list">
-      <li><a href="/">Sobre Nós</a></li>
-      <li><a href="/">Serviço</a></li>
-      <li><a href="/">Galeria</a></li>
-      <li><a href="/">Agende sua visita</a></li>
-    </ul>
+<header id="header">
+  <div id="container1">
+  
+    <img src="assets/logo.jpeg" alt="logo da creche pet em casa">
+    <nav>
+      <svg id="menu-h" xmlns="http://www.w3.org/2000/svg" (click)="aparecerMenu()" fill="currentColor" class="bi bi-list" viewBox="0 0 16 20">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5.5 0 0 1 .5-.5h10a.5.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <div id="menu-oculto" [class.show]="isMenuVisible">
+        <a class="menu" href="#">NOSSA HISTÓRIA</a>
+        <a class="menu" href="#">CONTATO</a>
+        <a class="menu" href="#">SERVICOS</a>
+        <a class="menu" href="#">CADASTRO</a>
+        <a id="login" href="#">AGENDAMENTOS</a>
+      </div>
+    </nav>
   </div>
-</nav>
-
+</header>
 
 
 
